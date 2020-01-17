@@ -1,0 +1,7 @@
+<div *ngFor="let planet of planets;">
+  <h3>
+    <a [title]="planet.LocationName + ' details'" [routerLink]="['/routes', planet.LocationId]">
+      {{ planet.LocationName}}
+    </a>
+  </h3>
+</div>

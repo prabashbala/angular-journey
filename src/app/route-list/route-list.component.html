@@ -1,0 +1,7 @@
+<div *ngFor="let route of routes;">
+  <h3>
+    <a [title]="route.Leg1 + ' details'" [routerLink]="['/schedules', route.RouteId]">
+      {{ route.Leg1}}
+    </a>
+  </h3>
+</div>

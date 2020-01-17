@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { planets } from '../planets-info';
 
 @Component({
   selector: 'app-planet-list',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanetListComponent implements OnInit {
 
+  planets=planets;
   constructor() { }
 
   ngOnInit() {

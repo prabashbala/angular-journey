@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { routes } from '../routes-info';
 
 @Component({
   selector: 'app-route-list',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RouteListComponent implements OnInit {
 
+ routes=routes;
   constructor() { }
 
   ngOnInit() {
